@@ -22,7 +22,7 @@
         android:layout_margin="30dp"
         android:orientation="horizontal">
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Masukan Nama Kamu"/>
     <ImageButton
