@@ -35,14 +35,14 @@
 
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/main_btn_checkBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:text="Ceklis Saya" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/main_btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
