@@ -13,6 +13,5 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val btnSubmit: Button= VindViewById(R.id.main_btn_submit)
     }
 }
