@@ -14,28 +14,24 @@
         android:layout_height="wrap_content"
         android:text="Selamat Datang"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:hint="Masukan Nama Kamu" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_autorenew"
-            android:contentDescription="Reset Input" />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nama Kamu"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_autorenew"/>
     </LinearLayout>
+
 
     <CheckBox
         android:id="@+id/main_btn_checkBox"
@@ -50,6 +46,7 @@
         android:layout_height="wrap_content"
         android:text="Button"
         android:layout_marginTop="10dp"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="100dp"/>
 
 </LinearLayout>
