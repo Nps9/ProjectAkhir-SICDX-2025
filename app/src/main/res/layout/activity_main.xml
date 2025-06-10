@@ -22,12 +22,13 @@
         android:layout_margin="30dp"
         android:orientation="horizontal">
 
+        <!-- Tambahkan ID ini -->
         <EditText
-            android:id="@+id/editTextNama" <!-- Tambahkan ID ini -->
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:hint="Masukan Nama Kamu"/>
+            android:id="@+id/editTextNama"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nama Kamu"/>
 
         <ImageButton
             android:layout_width="wrap_content"
