@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             editTextNama.text.clear()
             checkBox.isChecked = false
             textHasil.text = ""
+            sudahSubmit = false
 
 
         }
