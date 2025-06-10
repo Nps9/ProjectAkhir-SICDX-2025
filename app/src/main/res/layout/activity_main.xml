@@ -63,6 +63,7 @@
         android:text=""
         android:textColor="#FF0000" <!-- warna merah -->
         android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
 
 
 
