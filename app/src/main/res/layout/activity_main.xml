@@ -21,17 +21,19 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:orientation="horizontal">
-    <EditText
+
+        <EditText
+            android:id="@+id/editTextNama" <!-- Tambahkan ID ini -->
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:hint="Masukan Nama Kamu"/>
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_autorenew"/>
-    </LinearLayout>
 
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_autorenew"/>
+    </LinearLayout>
 
     <CheckBox
         android:id="@+id/main_btn_checkBox"
@@ -48,5 +50,4 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:layout_marginHorizontal="100dp"/>
-
 </LinearLayout>
