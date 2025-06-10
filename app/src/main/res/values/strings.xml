@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">ProjectAkhir-SICDX-2025</string>
+    <string name="app_name">ProjectAkhir_SICDX_2025</string>
+
+    <string-array name="daftar_tujuan">
+        <item>Pilih Tujuan Wisata</item>
+        <item>Pantai Mutun</item>
+        <item>Pulau Pahawang</item>
+        <item>Menara Siger</item>
+        <item>Way Kambas</item>
+    </string-array>
 </resources>
+
