@@ -12,17 +12,17 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val usernameInput = findViewById<EditText>(R.id.editTextUsername)
-        val passwordInput = findViewById<EditText>(R.id.editTextPassword)
-        val loginButton = findViewById<Button>(R.id.btnLogin)
+        val username = findViewById<EditText>(R.id.editTextUsername)
+        val password = findViewById<EditText>(R.id.editTextPassword)
+        val btnLogin = findViewById<Button>(R.id.btnLogin)
 
-        loginButton.setOnClickListener {
-            val username = usernameInput.text.toString()
-            val password = passwordInput.text.toString()
+        btnLogin.setOnClickListener {
+            val user = username.text.toString()
+            val pass = password.text.toString()
 
-            if (username == "admin" && password == "123") {
+            if (user == "admin" && pass == "1234") {
                 val intent = Intent(this, MainActivity::class.java)
-                intent.putExtra("username", username)
+                intent.putExtra("username", user)
                 startActivity(intent)
                 finish()
             } else {

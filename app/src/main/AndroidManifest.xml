@@ -27,6 +27,7 @@ android:theme="@style/Theme.ProjectAkhirSICDX2025"
 <activity
     android:name=".MainActivity"
     android:exported="true" />
+
 </application>
 
     </manifest>
