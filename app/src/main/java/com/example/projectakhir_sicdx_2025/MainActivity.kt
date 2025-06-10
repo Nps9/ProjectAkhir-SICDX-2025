@@ -4,19 +4,24 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    public override fun onCreate(savedInstanceState: Bundle?) {
+
+    private var sudahSubmit = false
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
         val editTextNama = findViewById<EditText>(R.id.editTextNama)
         val btnSubmit = findViewById<Button>(R.id.main_btn_submit)
-        val checkBox = findViewById<CheckBox>(R.id.main_btn_checkBox) // ✅ Tambahkan ini
+        val checkBox = findViewById<CheckBox>(R.id.main_btn_checkBox)
+        val textHasil = findViewById<TextView>(R.id.textHasil)
 
         btnSubmit.setOnClickListener {
             val nama = editTextNama.text.toString()
@@ -26,7 +31,8 @@ class MainActivity : AppCompatActivity() {
             } else if (!checkBox.isChecked) {
                 Toast.makeText(this, "Silakan ceklis dulu", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Halo, $nama!", Toast.LENGTH_SHORT).show()
+                val pesan = "Halo, $nama! Selamat datang di Aplikasi Pariwisata Lampung."
+                textHasil.text = pesan
             }
         }
     }
