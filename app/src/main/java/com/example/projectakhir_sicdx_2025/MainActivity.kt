@@ -1,10 +1,14 @@
 package com.example.projectakhir_sicdx_2025
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -30,35 +34,52 @@ class MainActivity : AppCompatActivity() {
         val textWaktu = findViewById<TextView>(R.id.textWaktu)
         val btnKeluar = findViewById<Button>(R.id.btnKeluar)
 
-        // Tombol Submit
+        val radioGroup = findViewById<RadioGroup>(R.id.radioGroupGender)
+        val spinnerTujuan = findViewById<Spinner>(R.id.spinnerTujuan)
+
+        val adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.daftar_tujuan,
+            android.R.layout.simple_spinner_item
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerTujuan.adapter = adapter
+
         btnSubmit.setOnClickListener {
             val nama = editTextNama.text.toString()
+            val tujuan = spinnerTujuan.selectedItem.toString()
+            val selectedRadioId = radioGroup.checkedRadioButtonId
 
             if (nama.isEmpty()) {
                 Toast.makeText(this, "Silakan isi nama terlebih dahulu", Toast.LENGTH_SHORT).show()
             } else if (!checkBox.isChecked) {
                 Toast.makeText(this, "Silakan ceklis dulu", Toast.LENGTH_SHORT).show()
+            } else if (selectedRadioId == -1) {
+                Toast.makeText(this, "Silakan pilih jenis kelamin", Toast.LENGTH_SHORT).show()
+            } else if (tujuan == "Pilih Tujuan Wisata") {
+                Toast.makeText(this, "Silakan pilih tujuan wisata", Toast.LENGTH_SHORT).show()
             } else {
-                val pesan = "Halo, $nama! Selamat datang di Aplikasi Pariwisata Lampung."
+                val gender = findViewById<RadioButton>(selectedRadioId).text.toString()
+                val pesan = "Halo $nama ($gender)!\nTujuan wisata: $tujuan\nSelamat datang di Aplikasi Pariwisata Lampung."
                 textHasil.text = pesan
                 textWaktu.text = getWaktuSekarang()
                 sudahSubmit = true
             }
         }
 
-        // Tombol Reset (ImageButton)
         imageButton.setOnClickListener {
             editTextNama.text.clear()
             checkBox.isChecked = false
             textHasil.text = ""
             textWaktu.text = ""
+            spinnerTujuan.setSelection(0)
+            radioGroup.clearCheck()
             sudahSubmit = false
             Toast.makeText(this, "Form telah direset", Toast.LENGTH_SHORT).show()
         }
 
-        // Tombol Keluar
         btnKeluar.setOnClickListener {
-            finishAffinity() // Menutup semua activity
+            finishAffinity()
         }
     }
 
