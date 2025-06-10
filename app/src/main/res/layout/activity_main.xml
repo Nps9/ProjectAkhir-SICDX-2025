@@ -147,5 +147,14 @@
         android:text=""
         android:padding="8dp"
         android:textStyle="italic" />
+    <!-- Catatan tambahan -->
+    <EditText
+        android:id="@+id/editTextCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Catatan tambahan"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>
