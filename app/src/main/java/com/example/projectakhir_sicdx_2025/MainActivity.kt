@@ -9,6 +9,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +27,10 @@ class MainActivity : AppCompatActivity() {
         val checkBox = findViewById<CheckBox>(R.id.main_btn_checkBox)
         val textHasil = findViewById<TextView>(R.id.textHasil)
         val imageButton = findViewById<ImageButton>(R.id.imageButton)
+        val textWaktu = findViewById<TextView>(R.id.textWaktu)
+        val btnKeluar = findViewById<Button>(R.id.btnKeluar)
 
+        // Tombol Submit
         btnSubmit.setOnClickListener {
             val nama = editTextNama.text.toString()
 
@@ -35,18 +41,29 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val pesan = "Halo, $nama! Selamat datang di Aplikasi Pariwisata Lampung."
                 textHasil.text = pesan
+                textWaktu.text = getWaktuSekarang()
                 sudahSubmit = true
             }
         }
+
+        // Tombol Reset (ImageButton)
         imageButton.setOnClickListener {
             editTextNama.text.clear()
             checkBox.isChecked = false
             textHasil.text = ""
+            textWaktu.text = ""
             sudahSubmit = false
             Toast.makeText(this, "Form telah direset", Toast.LENGTH_SHORT).show()
-
-
-
         }
+
+        // Tombol Keluar
+        btnKeluar.setOnClickListener {
+            finishAffinity() // Menutup semua activity
+        }
+    }
+
+    private fun getWaktuSekarang(): String {
+        val format = SimpleDateFormat("HH:mm:ss, dd MMM yyyy", Locale.getDefault())
+        return "Waktu submit: ${format.format(Date())}"
     }
 }
