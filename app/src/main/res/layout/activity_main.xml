@@ -75,7 +75,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp" />
 
-    <!-- 🔽 Tambahan lagi: Informasi bawah -->
+    <!-- Tambahan lagi: Informasi bawah -->
     <TextView
         android:id="@+id/textInfo"
         android:layout_width="wrap_content"
@@ -86,4 +86,14 @@
         android:layout_marginTop="20dp"
         android:textSize="12sp" />
 
+    <!-- Tombol keluar aplikasi -->
+    <Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keluar Aplikasi"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
