@@ -62,6 +62,8 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textColor="#FF0000" <!-- warna merah -->
+        android:layout_gravity="center"
+
 
 
 
