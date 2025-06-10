@@ -1,50 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="24dp"
-    android:orientation="vertical"
-    android:background="#FFE0B2">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp" android:background="#FFF3E0">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:paddingBottom="16dp" />
+    <EditText android:id="@+id/editTextUsername" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Username" />
 
-    <EditText
-        android:id="@+id/editTextUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Username"
-        android:inputType="text"
-        android:backgroundTint="#FFA726" />
+    <EditText android:id="@+id/editTextPassword" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Password" android:inputType="textPassword" />
 
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:backgroundTint="#FFA726"
-        android:layout_marginTop="8dp" />
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:backgroundTint="#F57C00"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="16dp" />
-
-    <TextView
-        android:id="@+id/textLoginError"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#D32F2F"
-        android:paddingTop="8dp" />
+    <Button android:id="@+id/btnLogin" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Login" android:layout_marginTop="16dp" />
 </LinearLayout>
