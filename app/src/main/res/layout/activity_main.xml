@@ -9,6 +9,7 @@
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
+    <!-- Judul utama -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp" />
 
+    <!-- Input nama dan tombol refresh -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,6 +42,7 @@
             android:src="@android:drawable/ic_menu_rotate" />
     </LinearLayout>
 
+    <!-- Checkbox -->
     <CheckBox
         android:id="@+id/main_btn_checkBox"
         android:layout_width="match_parent"
@@ -47,6 +50,7 @@
         android:layout_marginTop="20dp"
         android:text="Ceklis Saya" />
 
+    <!-- Tombol submit -->
     <Button
         android:id="@+id/main_btn_submit"
         android:layout_width="wrap_content"
@@ -65,7 +69,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp" />
 
-    <!-- Tambahan baru: TextView untuk menampilkan waktu -->
+    <!-- Tampilkan waktu -->
     <TextView
         android:id="@+id/textWaktu"
         android:layout_width="wrap_content"
@@ -75,7 +79,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp" />
 
-    <!-- Tambahan lagi: Informasi bawah -->
+    <!-- Informasi aplikasi -->
     <TextView
         android:id="@+id/textInfo"
         android:layout_width="wrap_content"
@@ -96,4 +100,5 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="#D32F2F"
         android:textColor="#FFFFFF" />
+
 </LinearLayout>
