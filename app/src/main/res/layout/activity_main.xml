@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Refresh"
-            android:src="@android:drawable/ic_menu_rotate" /> <!-- ✔️ pakai icon bawaan -->
+            android:src="@android:drawable/ic_menu_rotate" />
     </LinearLayout>
 
     <CheckBox
@@ -55,7 +55,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp" />
 
-    <!-- 🔴 Tambahan: text hasil -->
+    <!-- Tampilkan hasil submit -->
     <TextView
         android:id="@+id/textHasil"
         android:layout_width="wrap_content"
@@ -65,6 +65,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp" />
 
+    <!-- Tambahan baru: TextView untuk menampilkan waktu -->
     <TextView
         android:id="@+id/textWaktu"
         android:layout_width="wrap_content"
@@ -73,5 +74,4 @@
         android:textColor="#000000"
         android:layout_gravity="center"
         android:layout_marginTop="10dp" />
-
 </LinearLayout>
