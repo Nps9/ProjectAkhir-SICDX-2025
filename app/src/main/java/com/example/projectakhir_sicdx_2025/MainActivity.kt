@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val editTextNama = findViewById<EditText>(R.id.editTextNama)
         val btnSubmit = findViewById<Button>(R.id.main_btn_submit)
         val checkBox = findViewById<CheckBox>(R.id.main_btn_checkBox) // ✅ Tambahkan ini
+        val textHasil = findViewById<TextView>(R.id.textHasil)
 
         btnSubmit.setOnClickListener {
             val nama = editTextNama.text.toString()
