@@ -43,6 +43,8 @@ class MainActivity : AppCompatActivity() {
             checkBox.isChecked = false
             textHasil.text = ""
             sudahSubmit = false
+            Toast.makeText(this, "Form telah direset", Toast.LENGTH_SHORT).show()
+
 
 
         }
