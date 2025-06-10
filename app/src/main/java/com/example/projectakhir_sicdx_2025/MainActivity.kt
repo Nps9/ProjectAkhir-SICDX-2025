@@ -4,13 +4,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -18,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         val editTextNama = findViewById<EditText>(R.id.editTextNama)
         val btnSubmit = findViewById<Button>(R.id.main_btn_submit)
         val checkBox = findViewById<CheckBox>(R.id.main_btn_checkBox) // ✅ Tambahkan ini
-        val textHasil = findViewById<TextView>(R.id.textHasil)
 
         btnSubmit.setOnClickListener {
             val nama = editTextNama.text.toString()
