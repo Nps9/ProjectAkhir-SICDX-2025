@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         imageButton.setOnClickListener {
+            editTextNama.text.clear()
 
         }
     }
