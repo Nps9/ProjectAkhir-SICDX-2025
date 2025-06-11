@@ -23,10 +23,13 @@ android:theme="@style/Theme.ProjectAkhirSICDX2025"
     </intent-filter>
 </activity>
 
-<!-- MainActivity dibuka setelah login berhasil -->
+
+
+    <!-- MainActivity dibuka setelah login berhasil -->
 <activity
     android:name=".MainActivity"
     android:exported="true" />
+
 
 </application>
 
