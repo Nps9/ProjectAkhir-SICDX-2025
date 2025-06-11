@@ -47,21 +47,30 @@ class MainActivity : AppCompatActivity() {
         textHasil = findViewById(R.id.textHasil)
         textWaktu = findViewById(R.id.textWaktu)
 
-        // Data untuk spinner
-        val daftarTujuan = arrayOf("Pantai Pahawang", "Way Kambas", "Pulau Tegal Mas", "Pantai Mutun", "Teluk Kiluan")
+        // Data untuk spinner tujuan wisata
+        val daftarTujuan = arrayOf(
+            "Pantai Pahawang", "Way Kambas", "Pulau Tegal Mas",
+            "Pantai Mutun", "Teluk Kiluan"
+        )
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, daftarTujuan)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerTujuan.adapter = adapter
 
-        // Pilih tanggal
+        // Fungsi untuk memilih tanggal
         val kalender = Calendar.getInstance()
         btnTanggal.setOnClickListener {
-            DatePickerDialog(this, { _, year, month, day ->
-                val sdf = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
-                kalender.set(year, month, day)
-                val tanggal = sdf.format(kalender.time)
-                textTanggal.text = tanggal
-            }, kalender.get(Calendar.YEAR), kalender.get(Calendar.MONTH), kalender.get(Calendar.DAY_OF_MONTH)).show()
+            DatePickerDialog(
+                this,
+                { _, year, month, day ->
+                    val sdf = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
+                    kalender.set(year, month, day)
+                    val tanggal = sdf.format(kalender.time)
+                    textTanggal.text = tanggal
+                },
+                kalender.get(Calendar.YEAR),
+                kalender.get(Calendar.MONTH),
+                kalender.get(Calendar.DAY_OF_MONTH)
+            ).show()
         }
 
         // Tombol Submit
@@ -78,7 +87,11 @@ class MainActivity : AppCompatActivity() {
             val catatan = editTextCatatan.text.toString()
 
             if (!setuju) {
-                Toast.makeText(this, "Silakan centang persetujuan terlebih dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "Silakan centang persetujuan terlebih dahulu",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
                 val hasil = """
                     Nama: $nama
@@ -96,7 +109,7 @@ class MainActivity : AppCompatActivity() {
 
         // Tombol Keluar
         btnKeluar.setOnClickListener {
-            finishAffinity() // Keluar semua activity
+            finishAffinity() // Keluar dari seluruh activity
         }
     }
 }
