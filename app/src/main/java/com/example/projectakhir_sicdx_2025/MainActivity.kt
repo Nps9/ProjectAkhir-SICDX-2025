@@ -11,10 +11,13 @@ import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
+import android.content.Intent
+import com.example.projectakhir_sicdx_2025.WisataActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnKeluar: Button
     private lateinit var textHasil: TextView
     private lateinit var textWaktu: TextView
+    private lateinit var bottomNav: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         btnKeluar = findViewById(R.id.btnKeluar)
         textHasil = findViewById(R.id.textHasil)
         textWaktu = findViewById(R.id.textWaktu)
+        bottomNav = findViewById(R.id.bottom_navigation) // Tambahan bottom navigation
 
         // Data untuk spinner tujuan wisata
         val daftarTujuan = arrayOf(
@@ -111,5 +116,24 @@ class MainActivity : AppCompatActivity() {
         btnKeluar.setOnClickListener {
             finishAffinity() // Keluar dari seluruh activity
         }
-    }
+
+        // Bottom Navigation Listener
+        bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_beranda -> {
+                    val intent = Intent(this, WisataActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_galeri -> {
+                    Toast.makeText(this, "Galeri dibuka", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.nav_profil -> {
+                    Toast.makeText(this, "Profil dibuka", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
+        }
 }
