@@ -13,9 +13,13 @@ class WisataActivity : AppCompatActivity() {
         val daftarWisata = """
             Daftar Wisata Lampung:
 
+            - Pantai Pahawang
+            - Way Kambas
+            - Pulau Tegal Mas
+            - Pantai Mutun
+            - Teluk Kiluan
+        ""${'"'}.trimIndent()
 
-
+        textView.text = daftarWisata
     }
-
-
 }
