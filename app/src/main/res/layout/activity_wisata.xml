@@ -7,6 +7,8 @@
 
     <TextView
         android:id="@+id/textViewWisata"
+        android:textSize="18sp"
+
 
 
 
