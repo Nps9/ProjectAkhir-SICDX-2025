@@ -10,6 +10,8 @@ class WisataActivity : AppCompatActivity() {
         setContentView(R.layout.activity_wisata)
 
         val textView: TextView = findViewById(R.id.textViewWisata)
+        val daftarWisata = """
+            Daftar Wisata Lampung:
 
 
 
