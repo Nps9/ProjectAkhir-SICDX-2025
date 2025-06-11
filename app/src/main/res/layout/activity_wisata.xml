@@ -8,6 +8,8 @@
     <TextView
         android:id="@+id/textViewWisata"
         android:textSize="18sp"
+        android:textColor="#000000"
+
 
 
 
