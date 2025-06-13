@@ -62,6 +62,8 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:layout_marginBottom="16dp"
+            android:backgroundTint="#303F9F"
+            android:textColor="#FFFFFF" />
 
 
 
