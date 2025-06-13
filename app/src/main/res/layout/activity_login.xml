@@ -68,6 +68,7 @@
         <!-- Tombol Daftar -->
         <Button
             android:id="@+id/btnDaftar"
+            android:layout_width="match_parent"
 
 
 
