@@ -67,6 +67,7 @@
 
         <!-- Tombol Daftar -->
         <Button
+            android:id="@+id/btnDaftar"
 
 
 
