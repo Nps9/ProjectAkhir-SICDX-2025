@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         btnKeluar = findViewById(R.id.btnKeluar)
 
         // Mengisi spinner
-        val listTujuan = arrayOf("Pilih Tujuan", "Pantai Sari Ringgung", "Pulau Pahawang", "Lembah Hijau", "Menara Siger", "Pulau Sebesi", "Gunung Tanggamus")
+        val listTujuan = arrayOf("Pilih Tujuan", "Pantai Sari Ringgung", "Pulau Pahawang", "Lembah Hijau", "Menara Siger", "Pulau Sebesi", "Gunung Tanggamus", "Danau Ranau")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, listTujuan)
         spinnerTujuan.adapter = adapter
 
