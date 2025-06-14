@@ -20,6 +20,19 @@
             android:scaleType="centerCrop"
             android:layout_marginBottom="16dp" />
 
+        <!-- 🔴 COMMIT: Menambahkan TextView untuk quote inspiratif -->
+        <TextView
+            android:id="@+id/textViewQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Travel brings power and love back into your life."
+            android:textStyle="italic"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp" />
+
+        <!-- 🔴 COMMIT: Menambahkan TextView Judul utama -->
         <TextView
             android:id="@+id/textViewJudul"
             android:layout_width="wrap_content"
@@ -31,15 +44,7 @@
             android:gravity="center"
             android:layout_marginBottom="24dp" />
 
-        <Button
-            android:id="@+id/btnGaleri"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Galeri Wisata"
-            android:backgroundTint="#4CAF50"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="16dp" />
-
+        <!-- Tombol Daftar Wisata -->
         <Button
             android:id="@+id/btnWisata"
             android:layout_width="match_parent"
@@ -49,6 +54,7 @@
             android:textColor="#FFFFFF"
             android:layout_marginBottom="16dp" />
 
+        <!-- Tombol Tentang Aplikasi -->
         <Button
             android:id="@+id/btnTentang"
             android:layout_width="match_parent"
