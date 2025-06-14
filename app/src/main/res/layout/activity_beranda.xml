@@ -25,6 +25,8 @@
             android:id="@+id/textViewJudul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="\"Travel brings power and love back into your life.\""
+        android:textStyle="italic"
             android:text="Selamat Datang di Wisata Lampung"
             android:textSize="20sp"
             android:textStyle="bold"

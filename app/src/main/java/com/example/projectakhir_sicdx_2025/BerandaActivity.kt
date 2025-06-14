@@ -23,7 +23,8 @@ class BerandaActivity : AppCompatActivity() {
         )
 
         val randomIndex = Random.nextInt(quotes.size)
-        textViewQuote.text = quotes[randomIndex] // 🔴 COMMIT: Menampilkan kutipan terpilih
+        textViewQuote.text = quotes[randomIndex]
+
         btnWisata.setOnClickListener {
             val intent = Intent(this, WisataActivity::class.java)
             startActivity(intent)
