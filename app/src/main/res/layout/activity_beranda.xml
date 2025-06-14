@@ -3,6 +3,7 @@
     android:id="@+id/textViewQuote"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:text="\"Travel brings power and love back into your life.\""
     android:background="#FAFAFA">
 
     <LinearLayout
