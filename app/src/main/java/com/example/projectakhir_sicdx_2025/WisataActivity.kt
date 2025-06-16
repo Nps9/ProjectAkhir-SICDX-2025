@@ -19,7 +19,6 @@ class WisataActivity : AppCompatActivity() {
         btnGaleri.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-
         }
 
         // Tombol Daftar Wisata
