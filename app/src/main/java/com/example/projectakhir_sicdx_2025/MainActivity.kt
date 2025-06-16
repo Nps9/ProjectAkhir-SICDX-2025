@@ -1,6 +1,7 @@
 package com.example.projectakhir_sicdx_2025
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -99,6 +100,10 @@ class MainActivity : AppCompatActivity() {
 
             textHasil.text = hasil
             textWaktu.text = "Waktu submit: $waktu"
+
+            // Setelah tampil hasil, pindah ke ActivityWisata
+            val intent = Intent(this, WisataActivity::class.java)
+            startActivity(intent)
 
             // Jika memang diberi tombol untuk keluar
             btnKeluar.setOnClickListener {
