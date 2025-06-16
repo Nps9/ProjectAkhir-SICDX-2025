@@ -14,7 +14,7 @@
         <ImageView
             android:id="@+id/imageViewHeader"
             android:layout_width="350dp"
-            android:layout_height="200dp"
+            android:layout_height="350dp"
             android:src="@drawable/ic_launcher_background"
             android:contentDescription="Logo Lampung"
             android:scaleType="centerCrop"
