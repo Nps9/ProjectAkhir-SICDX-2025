@@ -55,7 +55,9 @@
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
             android:padding="16dp"
             android:layout_marginBottom="16dp"
-            android:textColor="#000000"/>
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            />
 
         <!-- Tombol Login -->
         <Button
