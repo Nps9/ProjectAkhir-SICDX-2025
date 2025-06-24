@@ -5,10 +5,18 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
-import android.widget.*
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.CheckBox
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.Spinner
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {
 
@@ -128,6 +136,7 @@ class MainActivity : AppCompatActivity() {
                 Catatan    : $catatan
             """.trimIndent()
 
+            // ⬇️ Kirim hasil ke HasilActivity
             val intent = Intent(this, HasilActivity::class.java)
             intent.putExtra("hasilFormulir", hasil)
             startActivity(intent)
