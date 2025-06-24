@@ -33,7 +33,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Nama -->
                 <EditText
                     android:id="@+id/editTextNama"
                     android:layout_width="match_parent"
@@ -41,7 +40,6 @@
                     android:hint="Nama Lengkap"
                     android:inputType="textPersonName" />
 
-                <!-- Umur -->
                 <EditText
                     android:id="@+id/editTextUmur"
                     android:layout_width="match_parent"
@@ -50,7 +48,6 @@
                     android:inputType="number"
                     android:layout_marginTop="8dp" />
 
-                <!-- Alamat -->
                 <EditText
                     android:id="@+id/editTextAlamat"
                     android:layout_width="match_parent"
@@ -59,7 +56,22 @@
                     android:inputType="textPostalAddress"
                     android:layout_marginTop="8dp" />
 
-                <!-- Gender -->
+                <EditText
+                    android:id="@+id/editTextTelepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Telepon / WhatsApp"
+                    android:inputType="phone"
+                    android:layout_marginTop="8dp" />
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="8dp" />
+
                 <RadioGroup
                     android:id="@+id/radioGroupGender"
                     android:layout_width="match_parent"
@@ -78,7 +90,6 @@
                         android:text="Perempuan" />
                 </RadioGroup>
 
-                <!-- Checkbox -->
                 <CheckBox
                     android:id="@+id/main_btn_checkBox"
                     android:layout_width="wrap_content"
@@ -132,6 +143,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Catatan Tambahan"
+                    android:layout_marginTop="8dp" />
+
+                <EditText
+                    android:id="@+id/editTextPeserta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jumlah Peserta"
+                    android:inputType="number"
                     android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
