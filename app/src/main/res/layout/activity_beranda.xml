@@ -20,7 +20,7 @@
             android:scaleType="centerCrop"
             android:layout_marginBottom="16dp" />
 
-        <!-- 🔴 COMMIT: Menambahkan TextView untuk quote inspiratif -->
+
         <TextView
             android:id="@+id/textViewQuote"
             android:layout_width="match_parent"
