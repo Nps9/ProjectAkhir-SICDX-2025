@@ -91,6 +91,20 @@
                 </RadioGroup>
 
                 <CheckBox
+                    android:id="@+id/checkPenginapan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Butuh Penginapan"
+                    android:layout_marginTop="8dp" />
+
+                <CheckBox
+                    android:id="@+id/checkMakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Butuh Makan"
+                    android:layout_marginTop="4dp" />
+
+                <CheckBox
                     android:id="@+id/main_btn_checkBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -152,6 +166,21 @@
                     android:hint="Jumlah Peserta"
                     android:inputType="number"
                     android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnUploadFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Foto KTP"
+                    android:layout_marginTop="8dp" />
+
+                <ImageView
+                    android:id="@+id/imagePreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="8dp"
+                    android:visibility="visible" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -161,6 +190,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Submit" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bagikan ke WhatsApp / Email"
+            android:layout_marginTop="8dp" />
 
         <TextView
             android:id="@+id/textHasil"
