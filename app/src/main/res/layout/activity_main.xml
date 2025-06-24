@@ -1,101 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Selamat Datang"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
-
-    <EditText
-        android:id="@+id/editTextNama"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama Lengkap" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <RadioGroup
-        android:id="@+id/radioGroupGender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/radioLaki"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Laki-laki" />
+            android:text="Formulir Wisata Lampung"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="12dp" />
 
-        <RadioButton
-            android:id="@+id/radioPerempuan"
+        <!-- CardView Data Pribadi -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cardview:cardElevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Nama -->
+                <EditText
+                    android:id="@+id/editTextNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap"
+                    android:inputType="textPersonName" />
+
+                <!-- Umur -->
+                <EditText
+                    android:id="@+id/editTextUmur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Umur"
+                    android:inputType="number"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Alamat -->
+                <EditText
+                    android:id="@+id/editTextAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat Rumah"
+                    android:inputType="textPostalAddress"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Gender -->
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+                    <RadioButton
+                        android:id="@+id/radioLaki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laki-laki" />
+                    <RadioButton
+                        android:id="@+id/radioPerempuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perempuan" />
+                </RadioGroup>
+
+                <!-- Checkbox -->
+                <CheckBox
+                    android:id="@+id/main_btn_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saya menyetujui ketentuan"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Garis Pemisah -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="12dp" />
+
+        <!-- CardView Tujuan & Tanggal -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            cardview:cardElevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerTujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Tanggal"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal belum dipilih"
+                    android:layout_marginTop="4dp" />
+
+                <EditText
+                    android:id="@+id/editTextCatatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Catatan Tambahan"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tombol & Hasil -->
+        <Button
+            android:id="@+id/main_btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/textHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/textWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnKeluar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perempuan" />
-    </RadioGroup>
-
-    <CheckBox
-        android:id="@+id/main_btn_checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Saya menyetujui ketentuan yang berlaku" />
-
-    <Spinner
-        android:id="@+id/spinnerTujuan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/btnTanggal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pilih Tanggal" />
-
-    <TextView
-        android:id="@+id/textTanggal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tanggal belum dipilih" />
-
-    <EditText
-        android:id="@+id/editTextCatatan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Catatan Tambahan" />
-
-    <Button
-        android:id="@+id/main_btn_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginTop="16dp" />
-
-    <TextView
-        android:id="@+id/textHasil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:paddingTop="8dp" />
-
-    <TextView
-        android:id="@+id/textWaktu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:paddingBottom="16dp" />
-
-    <Button
-        android:id="@+id/btnKeluar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Keluar Aplikasi"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#D32F2F"
-        android:textColor="#FFFFFF" />
-
-</LinearLayout>
+            android:text="Keluar Aplikasi"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
