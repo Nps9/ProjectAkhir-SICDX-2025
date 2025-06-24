@@ -6,7 +6,6 @@
     android:background="#FAFAFA"
     android:fillViewport="true">
 
-
     <LinearLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -14,21 +13,22 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-
-    <TextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Formulir Wisata Lampung"
             android:textSize="22sp"
             android:textStyle="bold"
             android:layout_gravity="center"
+            android:textColor="#1E88E5"
             android:paddingBottom="12dp" />
 
         <!-- CardView Data Pribadi -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            cardview:cardElevation="4dp"
+            cardview:cardElevation="6dp"
+            cardview:cardCornerRadius="12dp"
             android:layout_marginBottom="16dp"
             android:padding="12dp">
 
@@ -42,7 +42,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nama Lengkap"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:backgroundTint="#2196F3" />
 
                 <EditText
                     android:id="@+id/editTextUmur"
@@ -50,7 +51,8 @@
                     android:layout_height="wrap_content"
                     android:hint="Umur"
                     android:inputType="number"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#2196F3" />
 
                 <EditText
                     android:id="@+id/editTextAlamat"
@@ -58,7 +60,8 @@
                     android:layout_height="wrap_content"
                     android:hint="Alamat Rumah"
                     android:inputType="textPostalAddress"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#2196F3" />
 
                 <EditText
                     android:id="@+id/editTextTelepon"
@@ -66,7 +69,8 @@
                     android:layout_height="wrap_content"
                     android:hint="Nomor Telepon / WhatsApp"
                     android:inputType="phone"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#2196F3" />
 
                 <EditText
                     android:id="@+id/editTextEmail"
@@ -74,7 +78,8 @@
                     android:layout_height="wrap_content"
                     android:hint="Email"
                     android:inputType="textEmailAddress"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#2196F3" />
 
                 <RadioGroup
                     android:id="@+id/radioGroupGender"
@@ -82,11 +87,13 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginTop="8dp">
+
                     <RadioButton
                         android:id="@+id/radioLaki"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Laki-laki" />
+
                     <RadioButton
                         android:id="@+id/radioPerempuan"
                         android:layout_width="wrap_content"
@@ -121,14 +128,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#CCCCCC"
+            android:background="#BDBDBD"
             android:layout_marginBottom="12dp" />
 
         <!-- CardView Tujuan & Tanggal -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            cardview:cardElevation="4dp"
+            cardview:cardElevation="6dp"
+            cardview:cardCornerRadius="12dp"
             android:layout_marginBottom="16dp"
             android:padding="12dp">
 
@@ -147,7 +155,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pilih Tanggal"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#64B5F6" />
 
                 <TextView
                     android:id="@+id/textTanggal"
@@ -161,14 +170,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Catatan Tambahan"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#2196F3" />
 
                 <Button
                     android:id="@+id/btnUploadFoto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Upload Foto KTP"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#64B5F6" />
 
                 <ImageView
                     android:id="@+id/imagePreview"
@@ -181,48 +192,40 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Tombol & Hasil -->
+        <!-- Tombol -->
         <Button
             android:id="@+id/main_btn_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Submit"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/btnShare"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bagikan ke WhatsApp / Email"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#03A9F4"
+            android:textColor="#FFFFFF" />
 
-        <TextView
-            android:id="@+id/textHasil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:paddingTop="8dp" />
-
-        <TextView
-            android:id="@+id/textWaktu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:paddingBottom="16dp" />
         <Button
             android:id="@+id/btnKembali"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Kembali ke Awal"
-            android:layout_marginTop="8dp" />
-
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#9E9E9E"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/btnKeluar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Keluar Aplikasi"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="12dp"
             android:backgroundTint="#D32F2F"
             android:textColor="#FFFFFF" />
     </LinearLayout>

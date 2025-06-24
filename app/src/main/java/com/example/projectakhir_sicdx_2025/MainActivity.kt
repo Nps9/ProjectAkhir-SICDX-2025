@@ -5,18 +5,10 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Spinner
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import java.util.Calendar
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Inisialisasi komponen
+        // Inisialisasi komponen UI
         editTextNama = findViewById(R.id.editTextNama)
         editTextUmur = findViewById(R.id.editTextUmur)
         editTextAlamat = findViewById(R.id.editTextAlamat)
@@ -66,12 +58,9 @@ class MainActivity : AppCompatActivity() {
         btnSubmit = findViewById(R.id.main_btn_submit)
         btnShare = findViewById(R.id.btnShare)
         btnKeluar = findViewById(R.id.btnKeluar)
-
-        // Tambahkan tombol kembali
         btnKembali = findViewById(R.id.btnKembali)
 
-
-        // Isi spinner
+        // Spinner isi tujuan wisata
         val listTujuan = arrayOf(
             "Pilih Tujuan", "Pantai Sari Ringgung", "Pulau Pahawang", "Lembah Hijau", "Menara Siger",
             "Pulau Sebesi", "Gunung Tanggamus", "Danau Ranau", "Way Kambas", "Air Terjun Putri Malu",
@@ -80,13 +69,13 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, listTujuan)
         spinnerTujuan.adapter = adapter
 
-        // Pilih tanggal
+        // Tanggal Picker
         val calendar = Calendar.getInstance()
         btnTanggal.setOnClickListener {
             val datePicker = DatePickerDialog(
                 this,
                 { _, year, month, dayOfMonth ->
-                    selectedTanggal = "$dayOfMonth-${month + 1}-$year"
+                    selectedTanggal = "%02d-%02d-%04d".format(dayOfMonth, month + 1, year)
                     textTanggal.text = "Tanggal: $selectedTanggal"
                 },
                 calendar.get(Calendar.YEAR),
@@ -96,13 +85,13 @@ class MainActivity : AppCompatActivity() {
             datePicker.show()
         }
 
-        // Upload Foto
+        // Upload foto KTP
         btnUploadFoto.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
             startActivityForResult(intent, 100)
         }
 
-        // Submit Formulir
+        // Submit formulir
         btnSubmit.setOnClickListener {
             val nama = editTextNama.text.toString()
             val umur = editTextUmur.text.toString()
@@ -117,9 +106,9 @@ class MainActivity : AppCompatActivity() {
             val tujuan = spinnerTujuan.selectedItem.toString()
             val catatan = editTextCatatan.text.toString()
 
-            if (nama.isEmpty() || umur.isEmpty() || alamat.isEmpty() || telepon.isEmpty() ||
-                email.isEmpty() || gender.isEmpty() ||
-                !setuju || tujuan == "Pilih Tujuan" || selectedTanggal.isEmpty()
+            if (nama.isBlank() || umur.isBlank() || alamat.isBlank() || telepon.isBlank() ||
+                email.isBlank() || gender.isBlank() ||
+                !setuju || tujuan == "Pilih Tujuan" || selectedTanggal.isBlank()
             ) {
                 Toast.makeText(this, "Mohon lengkapi semua data!", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -144,20 +133,21 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Share hasil
+        // Share formulir
         btnShare.setOnClickListener {
-            val shareIntent = Intent(Intent.ACTION_SEND)
-            shareIntent.type = "text/plain"
-            shareIntent.putExtra(Intent.EXTRA_TEXT, "Bagikan formulir setelah submit dari halaman hasil")
+            val shareIntent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/plain"
+                putExtra(Intent.EXTRA_TEXT, "Bagikan formulir setelah submit dari halaman hasil")
+            }
             startActivity(Intent.createChooser(shareIntent, "Bagikan hasil via"))
         }
 
-        // Keluar aplikasi
+        // Tombol keluar aplikasi
         btnKeluar.setOnClickListener {
             finishAffinity()
         }
 
-        // Aksi tombol kembali
+        // Tombol kembali ke awal atau aktivitas sebelumnya
         btnKembali.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
