@@ -3,7 +3,8 @@
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAFAFA">
+    android:background="#FAFAFA"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -159,14 +160,6 @@
                     android:hint="Catatan Tambahan"
                     android:layout_marginTop="8dp" />
 
-                <EditText
-                    android:id="@+id/editTextPeserta"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Jumlah Peserta"
-                    android:inputType="number"
-                    android:layout_marginTop="8dp" />
-
                 <Button
                     android:id="@+id/btnUploadFoto"
                     android:layout_width="wrap_content"
@@ -177,7 +170,8 @@
                 <ImageView
                     android:id="@+id/imagePreview"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
                     android:layout_marginTop="8dp"
                     android:visibility="visible" />
@@ -189,7 +183,8 @@
             android:id="@+id/main_btn_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit" />
+            android:text="Submit"
+            android:layout_marginTop="12dp" />
 
         <Button
             android:id="@+id/btnShare"
@@ -214,11 +209,10 @@
 
         <Button
             android:id="@+id/btnKeluar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Keluar Aplikasi"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#D32F2F"
             android:textColor="#FFFFFF" />
     </LinearLayout>
