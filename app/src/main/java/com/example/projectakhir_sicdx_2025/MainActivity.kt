@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnSubmit: Button
     private lateinit var btnShare: Button
     private lateinit var btnKeluar: Button
+    private lateinit var btnKembali: Button
 
     private var selectedTanggal: String = ""
     private var imageUri: Uri? = null
@@ -65,6 +66,10 @@ class MainActivity : AppCompatActivity() {
         btnSubmit = findViewById(R.id.main_btn_submit)
         btnShare = findViewById(R.id.btnShare)
         btnKeluar = findViewById(R.id.btnKeluar)
+
+        // Tambahkan tombol kembali
+        btnKembali = findViewById(R.id.btnKembali)
+
 
         // Isi spinner
         val listTujuan = arrayOf(
@@ -150,6 +155,11 @@ class MainActivity : AppCompatActivity() {
         // Keluar aplikasi
         btnKeluar.setOnClickListener {
             finishAffinity()
+        }
+
+        // Aksi tombol kembali
+        btnKembali.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
         }
     }
 

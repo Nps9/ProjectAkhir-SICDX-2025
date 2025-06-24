@@ -6,13 +6,16 @@
     android:background="#FAFAFA"
     android:fillViewport="true">
 
+
     <LinearLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
+
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Formulir Wisata Lampung"
@@ -206,6 +209,13 @@
             android:layout_height="wrap_content"
             android:text=""
             android:paddingBottom="16dp" />
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kembali ke Awal"
+            android:layout_marginTop="8dp" />
+
 
         <Button
             android:id="@+id/btnKeluar"
