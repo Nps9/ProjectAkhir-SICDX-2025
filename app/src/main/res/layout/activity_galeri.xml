@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="🌳 Lembah Hijau\nTaman rekreasi keluarga lengkap dengan kebun binatang, wahana air, dan taman bermain."
-            android:padding="8dp" />
+        android:padding="8dp" />
 
         <!-- Menara Siger -->
         <ImageView
