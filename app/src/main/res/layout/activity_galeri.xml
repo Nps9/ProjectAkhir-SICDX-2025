@@ -117,7 +117,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-            android:text="🏞️ Danau Ranau\nDanau terbesar kedua di Sumatera. Pemandangan alam pegunungan dan sumber air panas alami."
+        android:text="🏞️ Danau Ranau\nDanau terbesar kedua di Sumatera. Pemandangan alam pegunungan dan sumber air panas alami."
             android:padding="8dp" />
 
         <!-- Way Kambas -->
