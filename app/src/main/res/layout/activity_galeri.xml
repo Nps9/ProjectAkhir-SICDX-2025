@@ -104,7 +104,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="⛰️ Gunung Tanggamus\nGunung yang cocok untuk pendaki pemula dengan jalur yang sejuk dan hijau."
-            android:padding="8dp" />
+        android:padding="8dp" />
 
         <!-- Danau Ranau -->
         <ImageView
