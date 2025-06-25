@@ -1,5 +1,4 @@
 package com.example.projectakhir_sicdx_2025
-
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.net.Uri
@@ -168,5 +167,4 @@ class MainActivity : AppCompatActivity() {
             imageUri = data.data
             imagePreview.setImageURI(imageUri)
         }
-    }
-}
+    }}

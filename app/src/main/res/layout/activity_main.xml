@@ -170,6 +170,7 @@
                     android:backgroundTint="#FF9800"
                     android:textColor="#FFFFFF" />
 
+
                 <ImageView
                     android:id="@+id/imagePreview"
                     android:layout_width="match_parent"
