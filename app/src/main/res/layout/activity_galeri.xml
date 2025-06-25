@@ -24,11 +24,12 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-            android:src="@drawable/pantai_sari_ringgung"
+        android:src="@drawable/pantai_sari_ringgung"
         android:scaleType="centerCrop"
         android:contentDescription="Pantai Sari Ringgung" />
 
-        <TextView
+
+    <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="🌊 Pantai Sari Ringgung\nPantai dengan pasir putih dan dermaga ke tengah laut. Cocok untuk foto-foto dan naik banana boat."
