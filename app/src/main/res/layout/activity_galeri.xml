@@ -114,7 +114,7 @@
         android:scaleType="centerCrop"
         android:contentDescription="Danau Ranau" />
 
-        <TextView
+    <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="🏞️ Danau Ranau\nDanau terbesar kedua di Sumatera. Pemandangan alam pegunungan dan sumber air panas alami."
