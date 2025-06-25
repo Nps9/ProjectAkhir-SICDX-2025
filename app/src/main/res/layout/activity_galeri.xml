@@ -109,7 +109,7 @@
         <!-- Danau Ranau -->
     <ImageView
         android:layout_width="match_parent"
-            android:layout_height="200dp"
+        android:layout_height="200dp"
             android:src="@drawable/danau_ranau"
             android:scaleType="centerCrop"
             android:contentDescription="Danau Ranau" />
