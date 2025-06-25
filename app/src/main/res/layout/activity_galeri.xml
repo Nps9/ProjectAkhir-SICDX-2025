@@ -130,7 +130,7 @@
 
     <TextView
         android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
             android:text="🐘 Way Kambas\nTaman Nasional pelestarian gajah sumatera. Tersedia atraksi dan edukasi gajah."
             android:padding="8dp" />
 
