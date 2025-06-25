@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:padding="16dp"
+    android:background="#FFFFFF">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ini adalah Halaman Galeri"
-        android:textSize="20sp" />
-</LinearLayout>
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Galeri Wisata Lampung"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Pantai Sari Ringgung -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pantai_sari_ringgung"
+            android:scaleType="centerCrop"
+            android:contentDescription="Pantai Sari Ringgung" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌊 Pantai Sari Ringgung\nPantai dengan pasir putih dan dermaga ke tengah laut. Cocok untuk foto-foto dan naik banana boat."
+            android:padding="8dp" />
+
+        <!-- Pulau Pahawang -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pulau_pahawang"
+            android:scaleType="centerCrop"
+            android:contentDescription="Pulau Pahawang" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏝️ Pulau Pahawang\nPulau dengan spot snorkeling terbaik. Air jernih dan terumbu karangnya masih alami."
+            android:padding="8dp" />
+
+        <!-- Lembah Hijau -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:lay
