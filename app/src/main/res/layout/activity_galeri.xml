@@ -46,7 +46,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-            android:text="🏝️ Pulau Pahawang\nPulau dengan spot snorkeling terbaik. Air jernih dan terumbu karangnya masih alami."
+        android:text="🏝️ Pulau Pahawang\nPulau dengan spot snorkeling terbaik. Air jernih dan terumbu karangnya masih alami."
             android:padding="8dp" />
 
         <!-- Lembah Hijau -->
