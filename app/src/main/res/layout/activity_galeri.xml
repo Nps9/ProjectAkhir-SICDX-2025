@@ -20,7 +20,8 @@
         android:paddingBottom="16dp" />
 
         <!-- Pantai Sari Ringgung -->
-        <ImageView
+
+    <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/pantai_sari_ringgung"
