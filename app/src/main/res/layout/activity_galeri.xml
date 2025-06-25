@@ -26,7 +26,7 @@
         android:layout_height="200dp"
             android:src="@drawable/pantai_sari_ringgung"
         android:scaleType="centerCrop"
-            android:contentDescription="Pantai Sari Ringgung" />
+        android:contentDescription="Pantai Sari Ringgung" />
 
         <TextView
             android:layout_width="match_parent"
