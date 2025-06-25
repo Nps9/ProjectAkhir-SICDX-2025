@@ -201,5 +201,5 @@
             android:text="💦 Curup Gangsa\nAir terjun deras dengan pemandangan batu-batu besar. Terletak di Way Kanan."
             android:padding="8dp" />
 
-    </LinearLayout>
+    </>
 </ScrollView>
