@@ -126,7 +126,7 @@
         android:layout_height="200dp"
         android:src="@drawable/way_kambas"
         android:scaleType="centerCrop"
-            android:contentDescription="Way Kambas" />
+        android:contentDescription="Way Kambas" />
 
         <TextView
             android:layout_width="match_parent"
