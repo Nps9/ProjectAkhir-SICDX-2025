@@ -50,4 +50,156 @@
         <!-- Lembah Hijau -->
         <ImageView
             android:layout_width="match_parent"
-            android:lay
+            android:layout_height="200dp"
+            android:src="@drawable/lembah_hijau"
+            android:scaleType="centerCrop"
+            android:contentDescription="Lembah Hijau" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌳 Lembah Hijau\nTaman rekreasi keluarga lengkap dengan kebun binatang, wahana air, dan taman bermain."
+            android:padding="8dp" />
+
+        <!-- Menara Siger -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/menara_siger"
+            android:scaleType="centerCrop"
+            android:contentDescription="Menara Siger" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗼 Menara Siger\nIkon Provinsi Lampung berwarna kuning merah, berada di atas bukit Pelabuhan Bakauheni."
+            android:padding="8dp" />
+
+        <!-- Pulau Sebesi -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pulau_sebesi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Pulau Sebesi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏝️ Pulau Sebesi\nPulau terdekat dari Gunung Anak Krakatau, cocok untuk camping dan snorkeling."
+            android:padding="8dp" />
+
+        <!-- Gunung Tanggamus -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/gunung_tanggamus"
+            android:scaleType="centerCrop"
+            android:contentDescription="Gunung Tanggamus" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⛰️ Gunung Tanggamus\nGunung yang cocok untuk pendaki pemula dengan jalur yang sejuk dan hijau."
+            android:padding="8dp" />
+
+        <!-- Danau Ranau -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/danau_ranau"
+            android:scaleType="centerCrop"
+            android:contentDescription="Danau Ranau" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏞️ Danau Ranau\nDanau terbesar kedua di Sumatera. Pemandangan alam pegunungan dan sumber air panas alami."
+            android:padding="8dp" />
+
+        <!-- Way Kambas -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/way_kambas"
+            android:scaleType="centerCrop"
+            android:contentDescription="Way Kambas" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐘 Way Kambas\nTaman Nasional pelestarian gajah sumatera. Tersedia atraksi dan edukasi gajah."
+            android:padding="8dp" />
+
+        <!-- Air Terjun Putri Malu -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/air_terjun_putri_malu"
+            android:scaleType="centerCrop"
+            android:contentDescription="Air Terjun Putri Malu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💧 Air Terjun Putri Malu\nAir terjun tersembunyi di hutan Way Kanan. Memiliki ketinggian sekitar 80 meter."
+            android:padding="8dp" />
+
+        <!-- Teluk Kiluan -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/teluk_kiluan"
+            android:scaleType="centerCrop"
+            android:contentDescription="Teluk Kiluan" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐬 Teluk Kiluan\nTempat terbaik untuk melihat lumba-lumba di alam bebas. Juga cocok untuk snorkeling."
+            android:padding="8dp" />
+
+        <!-- Puncak Mas -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/puncak_mas"
+            android:scaleType="centerCrop"
+            android:contentDescription="Puncak Mas" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌄 Puncak Mas\nWisata kekinian dengan rumah pohon dan spot selfie, terletak di Bandar Lampung."
+            android:padding="8dp" />
+
+        <!-- Bukit Cendana -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bukit_cendana"
+            android:scaleType="centerCrop"
+            android:contentDescription="Bukit Cendana" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌿 Bukit Cendana\nBukit dengan hamparan kebun dan tempat menikmati sunrise. Lokasinya di Lampung Barat."
+            android:padding="8dp" />
+
+        <!-- Curup Gangsa -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/curup_gangsa"
+            android:scaleType="centerCrop"
+            android:contentDescription="Curup Gangsa" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💦 Curup Gangsa\nAir terjun deras dengan pemandangan batu-batu besar. Terletak di Way Kanan."
+            android:padding="8dp" />
+
+    </LinearLayout>
+</ScrollView>
