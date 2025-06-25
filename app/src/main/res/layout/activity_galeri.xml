@@ -41,7 +41,7 @@
         android:layout_height="200dp"
             android:src="@drawable/pulau_pahawang"
         android:scaleType="centerCrop"
-            android:contentDescription="Pulau Pahawang" />
+        android:contentDescription="Pulau Pahawang" />
 
         <TextView
             android:layout_width="match_parent"
