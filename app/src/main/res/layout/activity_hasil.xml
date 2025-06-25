@@ -29,5 +29,13 @@
             android:backgroundTint="#03A9F4"
             android:textColor="#FFFFFF" />
 
+        <Button
+            android:id="@+id/btnLanjut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lanjut ke Galeri"
+            android:layout_marginTop="16dp"/>
+
+
     </LinearLayout>
 </ScrollView>
