@@ -53,8 +53,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-            android:src="@drawable/lembah_hijau"
-            android:scaleType="centerCrop"
+        android:src="@drawable/lembah_hijau"
+        android:scaleType="centerCrop"
             android:contentDescription="Lembah Hijau" />
 
         <TextView
