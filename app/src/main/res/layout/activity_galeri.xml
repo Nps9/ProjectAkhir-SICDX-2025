@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="🗼 Menara Siger\nIkon Provinsi Lampung berwarna kuning merah, berada di atas bukit Pelabuhan Bakauheni."
-        android:padding="8dp" />
+         android:padding="8dp" />
 
         <!-- Pulau Sebesi -->
         <ImageView
