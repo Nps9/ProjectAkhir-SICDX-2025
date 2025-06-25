@@ -71,7 +71,7 @@
         android:scaleType="centerCrop"
         android:contentDescription="Menara Siger" />
 
-        <TextView
+    <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="🗼 Menara Siger\nIkon Provinsi Lampung berwarna kuning merah, berada di atas bukit Pelabuhan Bakauheni."
