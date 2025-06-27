@@ -10,126 +10,129 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Galeri Wisata Lampung"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:paddingBottom="16dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Galeri Wisata Lampung"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
 
         <!-- Pantai Sari Ringgung -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/pantai_sari_ringgung"
-            android:scaleType="centerCrop"
-            android:contentDescription="Pantai Sari Ringgung" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/pantai_sari_ringgung"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pantai Sari Ringgung" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🌊 Pantai Sari Ringgung\nPantai dengan pasir putih dan dermaga ke tengah laut. Cocok untuk foto-foto dan naik banana boat."
-            android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌊 Pantai Sari Ringgung\nPantai dengan pasir putih dan dermaga ke tengah laut. Cocok untuk foto-foto dan naik banana boat."
+        android:padding="8dp" />
 
         <!-- Pulau Pahawang -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/pulau_pahawang"
-            android:scaleType="centerCrop"
-            android:contentDescription="Pulau Pahawang" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🏝️ Pulau Pahawang\nPulau dengan spot snorkeling terbaik. Air jernih dan terumbu karangnya masih alami."
-            android:padding="8dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+            android:src="@drawable/pulau_pahawang"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pulau Pahawang" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏝️ Pulau Pahawang\nPulau dengan spot snorkeling terbaik. Air jernih dan terumbu karangnya masih alami."
+        android:padding="8dp" />
 
         <!-- Lembah Hijau -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/lembah_hijau"
-            android:scaleType="centerCrop"
-            android:contentDescription="Lembah Hijau" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/lembah_hijau"
+        android:scaleType="centerCrop"
+        android:contentDescription="Lembah Hijau" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🌳 Lembah Hijau\nTaman rekreasi keluarga lengkap dengan kebun binatang, wahana air, dan taman bermain."
-            android:padding="8dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌳 Lembah Hijau\nTaman rekreasi keluarga lengkap dengan kebun binatang, wahana air, dan taman bermain."
+        android:padding="8dp" />
 
         <!-- Menara Siger -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/menara_siger"
-            android:scaleType="centerCrop"
-            android:contentDescription="Menara Siger" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/menara_siger"
+        android:scaleType="centerCrop"
+        android:contentDescription="Menara Siger" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🗼 Menara Siger\nIkon Provinsi Lampung berwarna kuning merah, berada di atas bukit Pelabuhan Bakauheni."
-            android:padding="8dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🗼 Menara Siger\nIkon Provinsi Lampung berwarna kuning merah, berada di atas bukit Pelabuhan Bakauheni."
+         android:padding="8dp" />
 
         <!-- Pulau Sebesi -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/pulau_sebesi"
-            android:scaleType="centerCrop"
-            android:contentDescription="Pulau Sebesi" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🏝️ Pulau Sebesi\nPulau terdekat dari Gunung Anak Krakatau, cocok untuk camping dan snorkeling."
-            android:padding="8dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/pulau_sebesi"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pulau Sebesi" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏝️ Pulau Sebesi\nPulau terdekat dari Gunung Anak Krakatau, cocok untuk camping dan snorkeling."
+        android:padding="8dp" />
 
         <!-- Gunung Tanggamus -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/gunung_tanggamus"
-            android:scaleType="centerCrop"
-            android:contentDescription="Gunung Tanggamus" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/gunung_tanggamus"
+        android:scaleType="centerCrop"
+        android:contentDescription="Gunung Tanggamus" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="⛰️ Gunung Tanggamus\nGunung yang cocok untuk pendaki pemula dengan jalur yang sejuk dan hijau."
-            android:padding="8dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⛰️ Gunung Tanggamus\nGunung yang cocok untuk pendaki pemula dengan jalur yang sejuk dan hijau."
+        android:padding="8dp" />
 
         <!-- Danau Ranau -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/danau_ranau"
-            android:scaleType="centerCrop"
-            android:contentDescription="Danau Ranau" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/danau_ranau"
+        android:scaleType="centerCrop"
+        android:contentDescription="Danau Ranau" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🏞️ Danau Ranau\nDanau terbesar kedua di Sumatera. Pemandangan alam pegunungan dan sumber air panas alami."
-            android:padding="8dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏞️ Danau Ranau\nDanau terbesar kedua di Sumatera. Pemandangan alam pegunungan dan sumber air panas alami."
+        android:padding="8dp" />
 
         <!-- Way Kambas -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/way_kambas"
-            android:scaleType="centerCrop"
-            android:contentDescription="Way Kambas" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/way_kambas"
+        android:scaleType="centerCrop"
+        android:contentDescription="Way Kambas" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="🐘 Way Kambas\nTaman Nasional pelestarian gajah sumatera. Tersedia atraksi dan edukasi gajah."
-            android:padding="8dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🐘 Way Kambas\nTaman Nasional pelestarian gajah sumatera. Tersedia atraksi dan edukasi gajah."
+        android:padding="8dp" />
 
         <!-- Air Terjun Putri Malu -->
         <ImageView
@@ -201,5 +204,5 @@
             android:text="💦 Curup Gangsa\nAir terjun deras dengan pemandangan batu-batu besar. Terletak di Way Kanan."
             android:padding="8dp" />
 
-    </LinearLayout>
+    </>
 </ScrollView>
