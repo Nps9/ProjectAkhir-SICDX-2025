@@ -147,7 +147,19 @@
             android:text="💧 Air Terjun Putri Malu\nAir terjun tersembunyi di hutan Way Kanan. Memiliki ketinggian sekitar 80 meter."
             android:padding="8dp" />
 
+        <!-- Teluk Kiluan -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/teluk_kiluan"
+            android:scaleType="centerCrop"
+            android:contentDescription="Teluk Kiluan" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐬 Teluk Kiluan\nTempat terbaik untuk melihat lumba-lumba di alam bebas. Juga cocok untuk snorkeling."
+            android:padding="8dp" />
 
         <!-- Puncak Mas -->
         <ImageView
