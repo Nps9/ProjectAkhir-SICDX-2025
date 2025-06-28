@@ -161,20 +161,23 @@
             android:text="🐬 Teluk Kiluan\nTempat terbaik untuk melihat lumba-lumba di alam bebas. Juga cocok untuk snorkeling."
             android:padding="8dp" />
 
-
-        <!-- Bukit Cendana -->
+        <!-- Puncak Mas -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/bukit_cendana"
+            android:src="@drawable/puncak_mas"
             android:scaleType="centerCrop"
-            android:contentDescription="Bukit Cendana" />
+            android:contentDescription="Puncak Mas" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🌿 Bukit Cendana\nBukit dengan hamparan kebun dan tempat menikmati sunrise. Lokasinya di Lampung Barat."
+            android:text="🌄 Puncak Mas\nWisata kekinian dengan rumah pohon dan spot selfie, terletak di Bandar Lampung."
             android:padding="8dp" />
+
+
+
+
 
         <!-- Curup Gangsa -->
         <ImageView
