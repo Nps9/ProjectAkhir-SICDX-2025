@@ -149,8 +149,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="💧 Air Terjun Putri Malu\nAir terjun tersembunyi di hutan Way Kanan. Memiliki ketinggian sekitar 80 meter."
+            android:text="💧 Air Terjun Putri Malu\nAir terjun megah tersembunyi di hutan Way Kanan dengan ketinggian ±80 meter. Dikelilingi pepohonan rimbun, suasananya sejuk dan alami—cocok untuk petualangan dan relaksasi di alam terbuka."
             android:padding="8dp" />
+
 
         <!-- Teluk Kiluan -->
         <ImageView
