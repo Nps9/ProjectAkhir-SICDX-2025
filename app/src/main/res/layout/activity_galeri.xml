@@ -73,11 +73,11 @@
         android:scaleType="centerCrop"
         android:contentDescription="Menara Siger" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🗼 Menara Siger\nIkon Provinsi Lampung berwarna kuning merah, berada di atas bukit Pelabuhan Bakauheni."
-         android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗼 Menara Siger\nIkon megah Provinsi Lampung yang menjulang di atas Bukit Gamping, Pelabuhan Bakauheni. Dikenal dengan warna kuning-merah khas dan bentuk siger, simbol budaya Lampung. Spot favorit untuk menyambut wisatawan dari arah Pulau Jawa."
+            android:padding="8dp" />
 
         <!-- Pulau Sebesi -->
 
