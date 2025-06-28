@@ -88,11 +88,12 @@
         android:scaleType="centerCrop"
         android:contentDescription="Pulau Sebesi" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🏝️ Pulau Sebesi\nPulau terdekat dari Gunung Anak Krakatau, cocok untuk camping dan snorkeling."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏝️ Pulau Sebesi\nPulau terdekat dari Gunung Anak Krakatau dengan pesona alam yang eksotis. Cocok untuk kegiatan camping, snorkeling, dan menikmati sunrise berlatar gunung berapi aktif."
+            android:padding="8dp" />
+
 
         <!-- Gunung Tanggamus -->
     <ImageView
