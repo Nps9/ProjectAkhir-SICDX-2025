@@ -210,8 +210,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="💦 Curup Gangsa\nAir terjun deras dengan pemandangan batu-batu besar. Terletak di Way Kanan."
+            android:text="💦 Curup Gangsa\nAir terjun megah di Way Kanan dengan aliran deras yang membentur batu-batu besar. Dikelilingi alam hijau yang asri, tempat ini cocok untuk relaksasi, eksplorasi alam, dan fotografi lanskap."
             android:padding="8dp" />
+
 
     </LinearLayout> <!-- ✅ PERBAIKAN -->
 </ScrollView>
