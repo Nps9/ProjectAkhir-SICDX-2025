@@ -134,13 +134,6 @@
         android:text="🐘 Way Kambas\nTaman Nasional pelestarian gajah sumatera. Tersedia atraksi dan edukasi gajah."
         android:padding="8dp" />
 
-        <!-- Air Terjun Putri Malu -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/air_terjun_putri_malu"
-            android:scaleType="centerCrop"
-            android:contentDescription="Air Terjun Putri Malu" />
 
         <TextView
             android:layout_width="match_parent"
@@ -204,5 +197,5 @@
             android:text="💦 Curup Gangsa\nAir terjun deras dengan pemandangan batu-batu besar. Terletak di Way Kanan."
             android:padding="8dp" />
 
-    </>
+    </LinearLayout> <!-- ✅ PERBAIKAN -->
 </ScrollView>
