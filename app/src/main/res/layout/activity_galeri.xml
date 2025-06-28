@@ -44,11 +44,11 @@
         android:scaleType="centerCrop"
         android:contentDescription="Pulau Pahawang" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🏝️ Pulau Pahawang\nPulau dengan spot snorkeling terbaik. Air jernih dan terumbu karangnya masih alami."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏝️ Pulau Pahawang\nSurga bawah laut di Lampung dengan spot snorkeling favorit, air laut yang jernih, dan terumbu karang alami yang memesona. Cocok untuk pecinta laut dan fotografi bawah air."
+            android:padding="8dp" />
 
         <!-- Lembah Hijau -->
     <ImageView
