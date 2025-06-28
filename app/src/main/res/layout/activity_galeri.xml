@@ -195,7 +195,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🌿 Bukit Cendana\nBukit dengan hamparan kebun dan tempat menikmati sunrise. Lokasinya di Lampung Barat."
+            android:text="🌿 Bukit Cendana\nBukit hijau di Lampung Barat yang menyuguhkan panorama kebun luas dan udara sejuk. Spot terbaik untuk menikmati sunrise yang menenangkan, cocok untuk healing dan fotografi alam."
             android:padding="8dp" />
 
 
