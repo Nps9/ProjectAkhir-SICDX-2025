@@ -164,8 +164,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🐬 Teluk Kiluan\nTempat terbaik untuk melihat lumba-lumba di alam bebas. Juga cocok untuk snorkeling."
+            android:text="🐬 Teluk Kiluan\nDestinasi terkenal untuk menyaksikan lumba-lumba liar langsung di habitat aslinya. Dikelilingi laut jernih dan pasir putih, cocok untuk snorkeling, fotografi alam, dan wisata bahari yang tenang."
             android:padding="8dp" />
+
 
         <!-- Puncak Mas -->
         <ImageView
