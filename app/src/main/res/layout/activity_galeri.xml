@@ -177,6 +177,19 @@
 
 
 
+        <!-- Bukit Cendana -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bukit_cendana"
+            android:scaleType="centerCrop"
+            android:contentDescription="Bukit Cendana" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌿 Bukit Cendana\nBukit dengan hamparan kebun dan tempat menikmati sunrise. Lokasinya di Lampung Barat."
+            android:padding="8dp" />
 
 
         <!-- Curup Gangsa -->
