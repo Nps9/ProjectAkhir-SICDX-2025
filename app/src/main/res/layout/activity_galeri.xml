@@ -132,11 +132,12 @@
         android:scaleType="centerCrop"
         android:contentDescription="Way Kambas" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🐘 Way Kambas\nTaman Nasional pelestarian gajah sumatera. Tersedia atraksi dan edukasi gajah."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐘 Way Kambas\nTaman Nasional terkenal di Lampung yang menjadi pusat pelestarian gajah Sumatera. Menawarkan atraksi gajah, edukasi konservasi satwa langka, dan pengalaman wisata alam yang mendalam."
+            android:padding="8dp" />
+
 
         <!-- Air Terjun Putri Malu -->
         <ImageView
