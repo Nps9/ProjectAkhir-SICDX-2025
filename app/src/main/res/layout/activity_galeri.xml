@@ -28,11 +28,12 @@
         android:contentDescription="Pantai Sari Ringgung" />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🌊 Pantai Sari Ringgung\nPantai dengan pasir putih dan dermaga ke tengah laut. Cocok untuk foto-foto dan naik banana boat."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌊 Pantai Sari Ringgung\nDestinasi pantai favorit di Lampung dengan hamparan pasir putih, air jernih, dan dermaga menjorok ke laut. Tersedia spot foto estetik, wahana banana boat, dan akses menuju pulau kecil di sekitarnya."
+            android:padding="8dp" />
+
 
         <!-- Pulau Pahawang -->
 
