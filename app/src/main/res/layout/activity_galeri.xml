@@ -28,11 +28,12 @@
         android:contentDescription="Pantai Sari Ringgung" />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🌊 Pantai Sari Ringgung\nPantai dengan pasir putih dan dermaga ke tengah laut. Cocok untuk foto-foto dan naik banana boat."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌊 Pantai Sari Ringgung\nDestinasi pantai favorit di Lampung dengan hamparan pasir putih, air jernih, dan dermaga menjorok ke laut. Tersedia spot foto estetik, wahana banana boat, dan akses menuju pulau kecil di sekitarnya."
+            android:padding="8dp" />
+
 
         <!-- Pulau Pahawang -->
 
@@ -43,11 +44,11 @@
         android:scaleType="centerCrop"
         android:contentDescription="Pulau Pahawang" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🏝️ Pulau Pahawang\nPulau dengan spot snorkeling terbaik. Air jernih dan terumbu karangnya masih alami."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏝️ Pulau Pahawang\nSurga bawah laut di Lampung dengan spot snorkeling favorit, air laut yang jernih, dan terumbu karang alami yang memesona. Cocok untuk pecinta laut dan fotografi bawah air."
+            android:padding="8dp" />
 
         <!-- Lembah Hijau -->
     <ImageView
@@ -57,11 +58,12 @@
         android:scaleType="centerCrop"
         android:contentDescription="Lembah Hijau" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🌳 Lembah Hijau\nTaman rekreasi keluarga lengkap dengan kebun binatang, wahana air, dan taman bermain."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌳 Lembah Hijau\nDestinasi wisata keluarga yang luas dan sejuk, dilengkapi kebun binatang mini, wahana permainan air, serta taman bermain anak. Cocok untuk liburan edukatif dan menyenangkan bersama keluarga."
+            android:padding="8dp" />
+
 
         <!-- Menara Siger -->
     <ImageView
@@ -71,11 +73,11 @@
         android:scaleType="centerCrop"
         android:contentDescription="Menara Siger" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🗼 Menara Siger\nIkon Provinsi Lampung berwarna kuning merah, berada di atas bukit Pelabuhan Bakauheni."
-         android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗼 Menara Siger\nIkon megah Provinsi Lampung yang menjulang di atas Bukit Gamping, Pelabuhan Bakauheni. Dikenal dengan warna kuning-merah khas dan bentuk siger, simbol budaya Lampung. Spot favorit untuk menyambut wisatawan dari arah Pulau Jawa."
+            android:padding="8dp" />
 
         <!-- Pulau Sebesi -->
 
@@ -86,11 +88,12 @@
         android:scaleType="centerCrop"
         android:contentDescription="Pulau Sebesi" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🏝️ Pulau Sebesi\nPulau terdekat dari Gunung Anak Krakatau, cocok untuk camping dan snorkeling."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏝️ Pulau Sebesi\nPulau terdekat dari Gunung Anak Krakatau dengan pesona alam yang eksotis. Cocok untuk kegiatan camping, snorkeling, dan menikmati sunrise berlatar gunung berapi aktif."
+            android:padding="8dp" />
+
 
         <!-- Gunung Tanggamus -->
     <ImageView
@@ -100,11 +103,12 @@
         android:scaleType="centerCrop"
         android:contentDescription="Gunung Tanggamus" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="⛰️ Gunung Tanggamus\nGunung yang cocok untuk pendaki pemula dengan jalur yang sejuk dan hijau."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⛰️ Gunung Tanggamus\nGunung favorit pendaki pemula dengan jalur pendakian yang hijau, sejuk, dan alami. Menawarkan pemandangan indah dari puncak dan suasana hutan yang tenang untuk melepas penat."
+            android:padding="8dp" />
+
 
         <!-- Danau Ranau -->
     <ImageView
@@ -128,25 +132,27 @@
         android:scaleType="centerCrop"
         android:contentDescription="Way Kambas" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="🐘 Way Kambas\nTaman Nasional pelestarian gajah sumatera. Tersedia atraksi dan edukasi gajah."
-        android:padding="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐘 Way Kambas\nTaman Nasional terkenal di Lampung yang menjadi pusat pelestarian gajah Sumatera. Menawarkan atraksi gajah, edukasi konservasi satwa langka, dan pengalaman wisata alam yang mendalam."
+            android:padding="8dp" />
+
 
         <!-- Air Terjun Putri Malu -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/air_terjun_putri_malu"
+            android:src="@drawable/putri_malu"
             android:scaleType="centerCrop"
             android:contentDescription="Air Terjun Putri Malu" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="💧 Air Terjun Putri Malu\nAir terjun tersembunyi di hutan Way Kanan. Memiliki ketinggian sekitar 80 meter."
+            android:text="💧 Air Terjun Putri Malu\nAir terjun menjulang setinggi ±80 meter yang tersembunyi di hutan Way Kanan. Dikelilingi pepohonan lebat dan udara sejuk, cocok untuk pencinta petualangan dan pelarian dari hiruk pikuk kota."
             android:padding="8dp" />
+
+
 
         <!-- Teluk Kiluan -->
         <ImageView
@@ -159,8 +165,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🐬 Teluk Kiluan\nTempat terbaik untuk melihat lumba-lumba di alam bebas. Juga cocok untuk snorkeling."
+            android:text="🐬 Teluk Kiluan\nDestinasi terkenal untuk menyaksikan lumba-lumba liar langsung di habitat aslinya. Dikelilingi laut jernih dan pasir putih, cocok untuk snorkeling, fotografi alam, dan wisata bahari yang tenang."
             android:padding="8dp" />
+
 
         <!-- Puncak Mas -->
         <ImageView
@@ -176,6 +183,8 @@
             android:text="🌄 Puncak Mas\nWisata kekinian dengan rumah pohon dan spot selfie, terletak di Bandar Lampung."
             android:padding="8dp" />
 
+
+
         <!-- Bukit Cendana -->
         <ImageView
             android:layout_width="match_parent"
@@ -187,8 +196,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="🌿 Bukit Cendana\nBukit dengan hamparan kebun dan tempat menikmati sunrise. Lokasinya di Lampung Barat."
+            android:text="🌿 Bukit Cendana\nBukit hijau di Lampung Barat yang menyuguhkan panorama kebun luas dan udara sejuk. Spot terbaik untuk menikmati sunrise yang menenangkan, cocok untuk healing dan fotografi alam."
             android:padding="8dp" />
+
 
         <!-- Curup Gangsa -->
         <ImageView
@@ -201,8 +211,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="💦 Curup Gangsa\nAir terjun deras dengan pemandangan batu-batu besar. Terletak di Way Kanan."
+            android:text="💦 Curup Gangsa\nAir terjun megah di Way Kanan dengan aliran deras yang membentur batu-batu besar. Dikelilingi alam hijau yang asri, tempat ini cocok untuk relaksasi, eksplorasi alam, dan fotografi lanskap."
             android:padding="8dp" />
 
-    </>
+
+    </LinearLayout> <!-- ✅ PERBAIKAN -->
 </ScrollView>

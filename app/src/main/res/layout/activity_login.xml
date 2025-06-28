@@ -1,83 +1,30 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E8EAF6">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#ECEFF1">
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/inputUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="32dp"
-        android:gravity="center">
+        android:hint="Username"
+        android:inputType="text" />
 
-        <!-- Logo -->
-        <ImageView
-            android:id="@+id/imageViewLogo"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
-            android:src="@drawable/lampung"
-            android:layout_gravity="center"
-            android:layout_marginBottom="32dp" />
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
 
-        <!-- Judul/Sambutan -->
-        <TextView
-            android:id="@+id/textViewWelcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WISATA LAMPUNG"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#303F9F"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
 
-        <!-- Username -->
-        <EditText
-            android:id="@+id/editTextUsername"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:inputType="text"
-            android:drawableLeft="@android:drawable/ic_menu_edit"
-            android:padding="16dp"
-            android:layout_marginBottom="16dp"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            />
-
-        <!-- Password -->
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Password"
-            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-            android:padding="16dp"
-            android:layout_marginBottom="16dp"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            />
-
-        <!-- Tombol Login -->
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#303F9F"
-            android:textColor="#FFFFFF" />
-
-        <!-- Tombol Daftar -->
-        <Button
-            android:id="@+id/btnDaftar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Daftar"
-            android:backgroundTint="#E91E63"
-            android:textColor="#FFFFFF" />
-
-    </LinearLayout>
-</ScrollView>
-
+</LinearLayout>
